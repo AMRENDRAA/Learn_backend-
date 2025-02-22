@@ -7,10 +7,10 @@ const cors=require('cors')
  
 
 //Middleware for parsing json
-// app.use(cors());
+//  app.use(cors());
 // Define the CORS options
 const corsOptions = {
-    credentials: true,
+    
     origin: ['https://learning-mern-kohl.vercel.app'] // Whitelist the domains you want to allow
 };
 
