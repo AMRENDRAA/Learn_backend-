@@ -10,8 +10,9 @@ const cors=require('cors')
 //  app.use(cors());
 // Define the CORS options
 const corsOptions = {
-    
-    origin: ['https://learning-mern-kohl.vercel.app'] // Whitelist the domains you want to allow
+    origin: ['https://learning-mern-kohl.vercel.app'], // Allowed frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow necessary methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allow necessary headers
 };
 
 app.use(cors(corsOptions));
