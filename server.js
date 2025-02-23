@@ -9,14 +9,18 @@ const cors=require('cors')
 //Middleware for parsing json
 //  app.use(cors());
 // Define the CORS options
-const corsOptions = {
-    origin: ['https://learning-mern-kohl.vercel.app'], // Allowed frontend
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow necessary methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allow necessary headers
-};
+// const corsOptions = {
+//     origin: ['https://learning-mern-kohl.vercel.app'], // Allowed frontend
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow necessary methods
+//     allowedHeaders: ['Content-Type', 'Authorization'], // Allow necessary headers
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
  app.use(express.json());
+ app.use(cors({
+  origin: '*'
+ }));
+
 
 
 
