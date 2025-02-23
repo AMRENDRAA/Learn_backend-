@@ -70,6 +70,9 @@ app.post('/login', async(req,res)=>{
     
 })
 
+app.get("/",async (req,res,next)=>{
+ return res.json({message:"Hello!"})
+})
 
 connectDB();
 
